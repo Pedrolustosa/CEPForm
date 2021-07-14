@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CEPForm
 {
-    public partial class Form1 : Form
+    public partial class FRMBuscaCEPs : Form
     {
-        public Form1()
+        public FRMBuscaCEPs()
         {
             InitializeComponent();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
