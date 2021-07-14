@@ -27,6 +27,10 @@ namespace CEPForm
                     {
                         var endereco = ws.consultaCEP(txtCEP.Text.Trim());
 
+                        txtEstado.Text = endereco.uf;
+                        txtCidade.Text = endereco.cidade;
+                        txtBairro.Text = endereco.bairro;
+                        txtRua.Text = endereco.end;
                     }
                     catch (Exception ex)
                     {
