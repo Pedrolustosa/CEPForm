@@ -282,6 +282,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Image\map-marker.png" />
     <Content Include="map-marker.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
