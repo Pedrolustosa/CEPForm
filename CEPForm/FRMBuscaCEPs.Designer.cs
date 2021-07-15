@@ -29,178 +29,187 @@ namespace CEPForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCEP = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.txtRua = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBairro = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMBuscaCEPs));
+            this.btnLimpar = new MaterialSkin.Controls.MaterialButton();
+            this.btnConsultar = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.txtRua = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtCidade = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtBairro = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtEstado = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtCEP = new MaterialSkin.Controls.MaterialTextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.materialCard1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CEP:";
-            // 
-            // txtCEP
-            // 
-            this.txtCEP.Location = new System.Drawing.Point(12, 25);
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(117, 20);
-            this.txtCEP.TabIndex = 1;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnSair);
-            this.groupBox1.Controls.Add(this.btnLimpar);
-            this.groupBox1.Controls.Add(this.txtRua);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtBairro);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtCidade);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtEstado);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 58);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(425, 242);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Resultado";
-            // 
-            // btnSair
-            // 
-            this.btnSair.BackgroundImage = global::CEPForm.Properties.Resources.sair;
-            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(200, 199);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 11;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnLimpar
             // 
-            this.btnLimpar.BackgroundImage = global::CEPForm.Properties.Resources.limpar;
-            this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLimpar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpar.Location = new System.Drawing.Point(281, 199);
+            this.btnLimpar.Depth = 0;
+            this.btnLimpar.DrawShadows = true;
+            this.btnLimpar.HighEmphasis = true;
+            this.btnLimpar.Icon = null;
+            this.btnLimpar.Location = new System.Drawing.Point(225, 81);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnLimpar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpar.TabIndex = 10;
+            this.btnLimpar.Size = new System.Drawing.Size(75, 36);
+            this.btnLimpar.TabIndex = 0;
             this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnLimpar.UseAccentColor = false;
             this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
-            // 
-            // txtRua
-            // 
-            this.txtRua.Location = new System.Drawing.Point(6, 158);
-            this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(350, 20);
-            this.txtRua.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 142);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Rua:";
-            // 
-            // txtBairro
-            // 
-            this.txtBairro.Location = new System.Drawing.Point(6, 117);
-            this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(350, 20);
-            this.txtBairro.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Bairro:";
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(6, 76);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(350, 20);
-            this.txtCidade.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Cidade:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(6, 38);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(350, 20);
-            this.txtEstado.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Estado:";
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click_1);
             // 
             // btnConsultar
             // 
-            this.btnConsultar.BackgroundImage = global::CEPForm.Properties.Resources.busca_cep;
-            this.btnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConsultar.Location = new System.Drawing.Point(312, 13);
+            this.btnConsultar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnConsultar.BackColor = System.Drawing.Color.Black;
+            this.btnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultar.Depth = 0;
+            this.btnConsultar.DrawShadows = true;
+            this.btnConsultar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnConsultar.FlatAppearance.BorderSize = 10;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConsultar.HighEmphasis = true;
+            this.btnConsultar.Icon = null;
+            this.btnConsultar.Location = new System.Drawing.Point(308, 81);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnConsultar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(125, 43);
-            this.btnConsultar.TabIndex = 3;
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            this.btnConsultar.Size = new System.Drawing.Size(106, 36);
+            this.btnConsultar.TabIndex = 2;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnConsultar.UseAccentColor = false;
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click_1);
+            // 
+            // materialCard1
+            // 
+            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.materialCard1.Controls.Add(this.txtRua);
+            this.materialCard1.Controls.Add(this.txtCidade);
+            this.materialCard1.Controls.Add(this.txtBairro);
+            this.materialCard1.Controls.Add(this.txtEstado);
+            this.materialCard1.Depth = 0;
+            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard1.Location = new System.Drawing.Point(5, 123);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard1.Name = "materialCard1";
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Size = new System.Drawing.Size(409, 135);
+            this.materialCard1.TabIndex = 3;
+            // 
+            // txtRua
+            // 
+            this.txtRua.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRua.Depth = 0;
+            this.txtRua.Enabled = false;
+            this.txtRua.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtRua.Hint = "Rua";
+            this.txtRua.Location = new System.Drawing.Point(13, 73);
+            this.txtRua.MaxLength = 50;
+            this.txtRua.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRua.Multiline = false;
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(386, 50);
+            this.txtRua.TabIndex = 8;
+            this.txtRua.Text = "";
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.BackColor = System.Drawing.Color.Green;
+            this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCidade.Depth = 0;
+            this.txtCidade.Enabled = false;
+            this.txtCidade.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtCidade.Hint = "Cidade";
+            this.txtCidade.Location = new System.Drawing.Point(90, 17);
+            this.txtCidade.MaxLength = 50;
+            this.txtCidade.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCidade.Multiline = false;
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(140, 50);
+            this.txtCidade.TabIndex = 7;
+            this.txtCidade.Text = "";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBairro.Depth = 0;
+            this.txtBairro.Enabled = false;
+            this.txtBairro.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtBairro.Hint = "Bairro";
+            this.txtBairro.Location = new System.Drawing.Point(236, 17);
+            this.txtBairro.MaxLength = 50;
+            this.txtBairro.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtBairro.Multiline = false;
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(163, 50);
+            this.txtBairro.TabIndex = 6;
+            this.txtBairro.Text = "";
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEstado.Depth = 0;
+            this.txtEstado.Enabled = false;
+            this.txtEstado.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtEstado.Hint = "Estado";
+            this.txtEstado.Location = new System.Drawing.Point(13, 17);
+            this.txtEstado.MaxLength = 50;
+            this.txtEstado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(71, 50);
+            this.txtEstado.TabIndex = 5;
+            this.txtEstado.Text = "";
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCEP.Depth = 0;
+            this.txtCEP.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtCEP.Hint = "CEP";
+            this.txtCEP.Location = new System.Drawing.Point(5, 67);
+            this.txtCEP.MaxLength = 8;
+            this.txtCEP.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCEP.Multiline = false;
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(100, 50);
+            this.txtCEP.TabIndex = 4;
+            this.txtCEP.Text = "";
+            this.txtCEP.UseAccent = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Location = new System.Drawing.Point(125, 81);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(0, 13);
+            this.linkLabel1.TabIndex = 5;
             // 
             // FRMBuscaCEPs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 309);
-            this.Controls.Add(this.btnConsultar);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(422, 264);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.txtCEP);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Controls.Add(this.materialCard1);
+            this.Controls.Add(this.btnConsultar);
+            this.Controls.Add(this.btnLimpar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FRMBuscaCEPs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar CEP";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.materialCard1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,20 +217,15 @@ namespace CEPForm
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtCEP;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.TextBox txtRua;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtBairro;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnConsultar;
-        private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.Button btnLimpar;
+        private MaterialSkin.Controls.MaterialButton btnLimpar;
+        private MaterialSkin.Controls.MaterialButton btnConsultar;
+        private MaterialSkin.Controls.MaterialCard materialCard1;
+        private MaterialSkin.Controls.MaterialTextBox txtCEP;
+        private MaterialSkin.Controls.MaterialTextBox txtRua;
+        private MaterialSkin.Controls.MaterialTextBox txtCidade;
+        private MaterialSkin.Controls.MaterialTextBox txtBairro;
+        private MaterialSkin.Controls.MaterialTextBox txtEstado;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

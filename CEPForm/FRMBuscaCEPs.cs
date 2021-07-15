@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MaterialSkin;
 using System.Windows.Forms;
+using MaterialSkin.Controls;
 
 namespace CEPForm
 {
-    public partial class FRMBuscaCEPs : Form
+    public partial class FRMBuscaCEPs : MaterialForm
     {
         public FRMBuscaCEPs()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Green400, Primary.Green700, Primary.Green700, Accent.Green400, TextShade.WHITE);
         }
 
-        private void btnConsultar_Click(object sender, EventArgs e)
+        private void btnConsultar_Click_1(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtCEP.Text))
             {
@@ -44,12 +44,7 @@ namespace CEPForm
             }
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnLimpar_Click(object sender, EventArgs e)
+        private void btnLimpar_Click_1(object sender, EventArgs e)
         {
             txtCEP.Text = string.Empty;
             txtEstado.Text = string.Empty;
