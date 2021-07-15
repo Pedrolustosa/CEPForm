@@ -25,6 +25,3 @@ Contatos:
 ```bash
 # Clone este repositório
 $ git clone  https://github.com/Pedrolustosa/CEPForm.git
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd 
